@@ -769,7 +769,7 @@ iScroll.prototype = {
 		}
 
 		animate = function () {
-			var now = Date.now(),
+			var now = new Date().getTime(),
 				newX, newY;
 
 			if (now >= startTime + step.time) {
